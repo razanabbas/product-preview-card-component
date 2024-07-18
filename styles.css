@@ -1,0 +1,110 @@
+/*-----CSS Reset-----*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  ul, ol {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  button, input, textarea {
+    font-family: inherit;
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+ 
+  /*-----Mobile Design-----*/
+
+body {font-family: font-family: "Montserrat", sans-serif;
+background-color: hsl(30, 38%, 92%);
+display: grid;
+place-content: center;
+font-size: 0.875rem;
+color: hsl(228, 12%, 48%);
+margin: 1.5rem;}
+
+.product {margin: 0 auto;
+background-color: white;
+border-radius: 1rem;
+max-width: 600px;
+display: grid;
+}
+
+
+.product-content {padding: 2rem;
+display: grid;
+row-gap: 1rem;
+}
+
+.description {line-height: 1.5em;}
+
+.category {letter-spacing: 0.3em;
+text-transform: uppercase;}
+
+.title {font-family: "Fraunces", serif;
+    font-size: 1.75rem;
+    overflow-wrap: break-word;
+    color: hsl(212, 21%, 14%);
+    font-weight: 700;
+}
+
+.price {display: flex;
+gap: 2em;}
+
+.price .product-price {font-family: "Fraunces", serif;
+font-size: 1.75em;
+color: hsl(158, 36%, 37%);
+font-weight: 700;}
+
+.price .og-price {text-decoration: line-through;}
+
+.button {display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:hsl(158, 36%, 37%);
+padding: 1em 1.5em;
+border-radius: 0.4em;}
+
+.button:visited, .button:hover, .button:active {background-color: hsl(158, 36%, 20%)}
+
+.button img {margin-right: 1em;}
+
+.button p {color: white;
+font-weight: 700;}
+
+/*-----Desktop Design-----*/
+@media screen and (min-width: 600px) {
+  .product {grid-template-columns: 50% 50%;
+  }
+  .product-content {margin: 0.5rem;}
+
+  
+}
